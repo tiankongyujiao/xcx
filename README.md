@@ -53,6 +53,13 @@ Page() 函数用来注册一个页面。接受一个 object 参数，其指定�
 （9）onShareAppMessage:--用户点击右上角转发  
 （10）onPageScroll:--页面滚动时触发事件的处理函数  
 还包括用户的点击等事件，由用户自定义名称.  
+可以通过Page.prototype.setData()来把数据从逻辑层发送到视图层（异步），同时改变this.data的值（同步）。  
+setData()可以有两个参数，一个object（以key：value形式存在），和一个回调函数callback。  
+object的key不需要在this.data中预先定义。  
+注意点：  
+（1）直接修改 this.data 而不调用 this.setData 是无法改变页面的状态的，还会造成数据不一致  
+（2）单次设置的数据不能超过1024kB，请尽量避免一次设置过多的数据  
+
 
 
 
