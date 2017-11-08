@@ -63,6 +63,10 @@ object的key不需要在this.data中预先定义。  
 （1）直接修改 this.data 而不调用 this.setData 是无法改变页面的状态的，还会造成数据不一致  
 （2）单次设置的数据不能超过1024kB，请尽量避免一次设置过多的数据  
 
+### 事件
+bind绑定的事件不能阻止事件冒泡，catch绑定的事假可以阻止事件冒泡。  
+捕获阶段监听事件时，可以采用capture-bind、capture-catch关键字。  
+
 
 
 
