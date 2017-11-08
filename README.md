@@ -51,7 +51,7 @@ Page() 函数用来注册一个页面。接受一个 object 参数，其指定�
 （7）onPullDownRefresh:--监听用户下拉动作  
 （8）onReachBottom：--页面上拉触底的事件处理函数  
 （9）onShareAppMessage:--用户点击右上角转发  
-（10）onPageScroll:--页面滚动时触发事件的处理函数
+（10）onPageScroll:--页面滚动时触发事件的处理函数  
 还包括用户的点击等事件，由用户自定义名称.  
 
 
