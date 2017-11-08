@@ -67,6 +67,19 @@ object的key不需要在this.data中预先定义。  
 bind绑定的事件不能阻止事件冒泡，catch绑定的事假可以阻止事件冒泡。  
 捕获阶段监听事件时，可以采用capture-bind、capture-catch关键字。  
 
+dataSet  
+在组件中可以定义数据，这些数据将会通过事件传递给 SERVICE。 书写方式： 以data-开头，多个单词由连字符-链接，不能有大写(大写会自动转成小写)如data-element-type，最终在 event.currentTarget.dataset 中会将连字符转成驼峰elementType。
+```
+<view data-alpha-beta="1" data-alphaBeta="2" bindtap="bindViewTap"> DataSet Test </view>
+```
+```
+Page({
+  bindViewTap:function(event){
+    event.currentTarget.dataset.alphaBeta === 1 // - 会转为驼峰写法
+    event.currentTarget.dataset.alphabeta === 2 // 大写会转为小写
+  }
+})
+```
 
 
 
