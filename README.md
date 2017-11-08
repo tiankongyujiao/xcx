@@ -40,4 +40,21 @@ console.log(appInstance.globalData) // I am global data
 （4）通过 getApp() 获取实例之后，不要私自调用生命周期函数。
 ### page
 Page() 函数用来注册一个页面。接受一个 object 参数，其指定页面的初始数据、生命周期函数、事件处理函数等。  
-1.data对象：当前页面的数据源
+（1）data对象：当前页面的数据源
+生命周期函数：  
+（2）onLoad:--监听页面加载   
+（3）onReady:--监听页面初次渲染完成  
+（4）onShow:--监听页面显示  
+（5）onHide:--监听页面隐藏  
+（6）onUpload:-- 监听页面卸载  
+监听相关事件处理函数：  
+（7）onPullDownRefresh:--监听用户下拉动作  
+（8）onReachBottom：--页面上拉触底的事件处理函数  
+（9）onShareAppMessage:--用户点击右上角转发  
+（10）onPageScroll:--页面滚动时触发事件的处理函数
+还包括用户的点击等事件，由用户自定义名称.  
+
+
+
+
+
