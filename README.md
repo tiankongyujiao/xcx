@@ -52,8 +52,10 @@ Page() 函数用来注册一个页面。接受一个 object 参数，其指定�
 （8）onReachBottom：--页面上拉触底的事件处理函数  
 （9）onShareAppMessage:--用户点击右上角转发  
 （10）onPageScroll:--页面滚动时触发事件的处理函数  
+
 还包括用户的点击等事件，由用户自定义名称.  
 可以通过Page.prototype.setData()来把数据从逻辑层发送到视图层（异步），同时改变this.data的值（同步）。  
+
 setData()可以有两个参数，一个object（以key：value形式存在），和一个回调函数callback。  
 object的key不需要在this.data中预先定义。    
 
