@@ -39,4 +39,5 @@ console.log(appInstance.globalData) // I am global data
 （3）不要在 onLaunch 的时候调用 getCurrentPages()，此时 page 还没有生成。
 （4）通过 getApp() 获取实例之后，不要私自调用生命周期函数。
 ### page
+Page() 函数用来注册一个页面。接受一个 object 参数，其指定页面的初始数据、生命周期函数、事件处理函数等。  
 1.data对象：当前页面的数据源
