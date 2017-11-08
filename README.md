@@ -1,5 +1,14 @@
 # xcx
 小程序开发指南  
+
+### 文件结构
+主文件app文件和pages页面组成，app页面包含了三个基本文件：  
+（1）app.json  小程序公共设置，比如页面的路径配置，要显示或者跳转的路径必须在app.json对象的pages对象里面
+（2）app.js    小程序逻辑，比如登录，获取用户信息
+（3）app.wxss  小程序公共样式表
+
+一个pages里面的某个具体页面由四个文件组成，app.wxml,app.js,app,json,app.wxss
+
 微信框架被分为：  
 （1）视图层描述语言：wxml，wxss；  
 （2）逻辑层描述语言：js。  
