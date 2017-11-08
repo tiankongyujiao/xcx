@@ -20,5 +20,13 @@
 
 ### 模块化：可以将一些公共的代码抽离成为一个单独的 js 文件，作为一个模块。模块只有通过 module.exports 或者 exports 才能对外暴露接口。
 通过require来引入公共代码，require暂时不支持绝对路径。
+
+### getApp()
+全局的 getApp() 函数可以用来获取到小程序实例。
+```
+// other.js
+var appInstance = getApp()
+console.log(appInstance.globalData) // I am global data
+```
 ### page
 1.data对象：当前页面的数据源
