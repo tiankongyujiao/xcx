@@ -97,6 +97,19 @@ wx:key 的值以两种形式提供  :
 （2）hidden不管值为false还是true，首次总会渲染，只是显示不显示的区别，切换状态也不会销毁或者重新渲染。  
 （3）如果有频繁的切换操作行为，使用hidden较好。  
 
+#### WXML 模板
+使用 name 属性，作为模板的名字。然后在<template/>内定义代码片段，如：
+```
+<template name="msgItem">
+  <view>
+    <text> {{index}}: {{msg}} </text>
+    <text> Time: {{time}} </text>
+  </view>
+</template>
+```
+
+
+
 #### WXS 模块
 WXS 代码可以编写在 wxml 文件中的 <wxs> 标签内，或以 .wxs 为后缀名的文件内。  
 （1）每一个 .wxs 文件和 <wxs> 标签都是一个单独的模块。  
